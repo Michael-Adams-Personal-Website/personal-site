@@ -1,0 +1,26 @@
+.layout-container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  background-color: beige;
+  grid-gap: 10px;
+}
+
+.layout-container * {
+  background-color: blue;
+}
+
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+body {
+  grid-area: body;
+}
