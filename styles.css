@@ -1,63 +1,50 @@
 .layout-container {
   display: grid;
   grid-template-areas:
-    "header"
-    "main"
-    "footer"
-    "body";
+    "header header header header"
+    " main main main "
+    "footer footer footer";
   grid-gap: 10px;
   background-color: grey;
   padding-bottom: 1px;
 }
 
-.layout-container * {
-}
-
-header {
+.header {
   grid-area: header;
+  background-color: black;
   border: 1px solid black;
   padding-bottom: 10px;
-  background-color: black;
 }
-main {
+.main {
   grid-area: main;
   padding-top: 70px;
 }
-footer {
-  grid-area: footer;
+.footer {
+  grid-column-end: footer;
 }
-body {
-  grid-area: body;
-  border: 2px solid black;
-  padding-left: 0;
-  padding-top: 0;
+.body {
+  padding: 2px;
 }
 img {
   width: 250px;
   padding: 5px;
   border: 1px solid black;
 }
-.persistent-header {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 5px;
-  z-index: 100;
-}
+
 nav {
   background-color: teal;
   padding: 10px;
+  padding-bottom: 10px;
 }
-ul {
+. .ul {
   list-style-type: none;
   padding: 0;
   display: flex;
 }
-li {
+.li {
   margin-right: 20px;
 }
-a {
+.a {
   text-decoration: none;
   color: gold;
   background-color: teal;
@@ -65,6 +52,5 @@ a {
   padding: 2px;
 }
 .name {
-  color: teal;
-  background-color: black;
+  color: black;
 }
